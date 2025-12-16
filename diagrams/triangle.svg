@@ -1,0 +1,5 @@
+<svg viewBox="0 0 250 200" xmlns="http://www.w3.org/2000/svg">
+  <polygon points="50,150 200,150 125,50" stroke="black" fill="none" stroke-width="2"/>
+  <!-- height -->
+  <line x1="125" y1="50" x2="125" y2="150" stroke="red" stroke-dasharray="5,5"/>
+</svg>
