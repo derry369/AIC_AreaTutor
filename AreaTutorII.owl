@@ -1,0 +1,704 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/dee/ontologies/2025/11/untitled-ontology-29/"
+     xml:base="http://www.semanticweb.org/dee/ontologies/2025/11/untitled-ontology-29/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:untitled-ontology-29="http://www.semanticweb.org/dee/ontologies/2025/11/untitled-ontology-29#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/dee/ontologies/2025/11/untitled-ontology-29"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/dee/ontologies/2025/11/untitled-ontology-29#explainsFormula -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/dee/ontologies/2025/11/untitled-ontology-29#explainsFormula">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/dee/ontologies/2025/11/untitled-ontology-29#Lesson"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/dee/ontologies/2025/11/untitled-ontology-29#Formula"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/dee/ontologies/2025/11/untitled-ontology-29#hasComponent -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/dee/ontologies/2025/11/untitled-ontology-29#hasComponent">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/dee/ontologies/2025/11/untitled-ontology-29#Shape"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/dee/ontologies/2025/11/untitled-ontology-29#Component"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/dee/ontologies/2025/11/untitled-ontology-29#hasFormula -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/dee/ontologies/2025/11/untitled-ontology-29#hasFormula">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/dee/ontologies/2025/11/untitled-ontology-29#Shape"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/dee/ontologies/2025/11/untitled-ontology-29#Formula"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/dee/ontologies/2025/11/untitled-ontology-29#hasWorkedExample -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/dee/ontologies/2025/11/untitled-ontology-29#hasWorkedExample">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/dee/ontologies/2025/11/untitled-ontology-29#Lesson"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/dee/ontologies/2025/11/untitled-ontology-29#WorkedExample"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/dee/ontologies/2025/11/untitled-ontology-29#teachesShape -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/dee/ontologies/2025/11/untitled-ontology-29#teachesShape">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/dee/ontologies/2025/11/untitled-ontology-29#Lesson"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/dee/ontologies/2025/11/untitled-ontology-29#Shape"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/dee/ontologies/2025/11/untitled-ontology-29#usesComponent -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/dee/ontologies/2025/11/untitled-ontology-29#usesComponent">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/dee/ontologies/2025/11/untitled-ontology-29#Shape"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/dee/ontologies/2025/11/untitled-ontology-29#Component"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/dee/ontologies/2025/11/untitled-ontology-29#formulaText -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/dee/ontologies/2025/11/untitled-ontology-29#formulaText">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/dee/ontologies/2025/11/untitled-ontology-29#Formula"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/dee/ontologies/2025/11/untitled-ontology-29#lessonText -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/dee/ontologies/2025/11/untitled-ontology-29#lessonText">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/dee/ontologies/2025/11/untitled-ontology-29#Lesson"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/dee/ontologies/2025/11/untitled-ontology-29#stepText -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/dee/ontologies/2025/11/untitled-ontology-29#stepText">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/dee/ontologies/2025/11/untitled-ontology-29#WorkedExample"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/dee/ontologies/2025/11/untitled-ontology-29#value -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/dee/ontologies/2025/11/untitled-ontology-29#value">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/dee/ontologies/2025/11/untitled-ontology-29#Component"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/dee/ontologies/2025/11/untitled-ontology-29#AreaFormula -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/dee/ontologies/2025/11/untitled-ontology-29#AreaFormula">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/dee/ontologies/2025/11/untitled-ontology-29#Formula"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/dee/ontologies/2025/11/untitled-ontology-29#Base -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/dee/ontologies/2025/11/untitled-ontology-29#Base">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/dee/ontologies/2025/11/untitled-ontology-29#Component"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/dee/ontologies/2025/11/untitled-ontology-29#BaseA -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/dee/ontologies/2025/11/untitled-ontology-29#BaseA">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/dee/ontologies/2025/11/untitled-ontology-29#Component"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/dee/ontologies/2025/11/untitled-ontology-29#BaseB -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/dee/ontologies/2025/11/untitled-ontology-29#BaseB">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/dee/ontologies/2025/11/untitled-ontology-29#Component"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/dee/ontologies/2025/11/untitled-ontology-29#Circle -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/dee/ontologies/2025/11/untitled-ontology-29#Circle">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/dee/ontologies/2025/11/untitled-ontology-29#Shape"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/dee/ontologies/2025/11/untitled-ontology-29#Component -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/dee/ontologies/2025/11/untitled-ontology-29#Component"/>
+    
+
+
+    <!-- http://www.semanticweb.org/dee/ontologies/2025/11/untitled-ontology-29#Formula -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/dee/ontologies/2025/11/untitled-ontology-29#Formula"/>
+    
+
+
+    <!-- http://www.semanticweb.org/dee/ontologies/2025/11/untitled-ontology-29#Height -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/dee/ontologies/2025/11/untitled-ontology-29#Height">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/dee/ontologies/2025/11/untitled-ontology-29#Component"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/dee/ontologies/2025/11/untitled-ontology-29#Length -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/dee/ontologies/2025/11/untitled-ontology-29#Length">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/dee/ontologies/2025/11/untitled-ontology-29#Component"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/dee/ontologies/2025/11/untitled-ontology-29#Lesson -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/dee/ontologies/2025/11/untitled-ontology-29#Lesson"/>
+    
+
+
+    <!-- http://www.semanticweb.org/dee/ontologies/2025/11/untitled-ontology-29#Misconception -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/dee/ontologies/2025/11/untitled-ontology-29#Misconception"/>
+    
+
+
+    <!-- http://www.semanticweb.org/dee/ontologies/2025/11/untitled-ontology-29#Parallelogram -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/dee/ontologies/2025/11/untitled-ontology-29#Parallelogram">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/dee/ontologies/2025/11/untitled-ontology-29#Shape"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/dee/ontologies/2025/11/untitled-ontology-29#Radius -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/dee/ontologies/2025/11/untitled-ontology-29#Radius">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/dee/ontologies/2025/11/untitled-ontology-29#Component"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/dee/ontologies/2025/11/untitled-ontology-29#Rectangle -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/dee/ontologies/2025/11/untitled-ontology-29#Rectangle">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/dee/ontologies/2025/11/untitled-ontology-29#Shape"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/dee/ontologies/2025/11/untitled-ontology-29#Shape -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/dee/ontologies/2025/11/untitled-ontology-29#Shape"/>
+    
+
+
+    <!-- http://www.semanticweb.org/dee/ontologies/2025/11/untitled-ontology-29#Side -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/dee/ontologies/2025/11/untitled-ontology-29#Side">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/dee/ontologies/2025/11/untitled-ontology-29#Component"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/dee/ontologies/2025/11/untitled-ontology-29#Square -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/dee/ontologies/2025/11/untitled-ontology-29#Square">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/dee/ontologies/2025/11/untitled-ontology-29#Shape"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/dee/ontologies/2025/11/untitled-ontology-29#Trapezium -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/dee/ontologies/2025/11/untitled-ontology-29#Trapezium">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/dee/ontologies/2025/11/untitled-ontology-29#Shape"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/dee/ontologies/2025/11/untitled-ontology-29#Triangle -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/dee/ontologies/2025/11/untitled-ontology-29#Triangle">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/dee/ontologies/2025/11/untitled-ontology-29#Shape"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/dee/ontologies/2025/11/untitled-ontology-29#Width -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/dee/ontologies/2025/11/untitled-ontology-29#Width">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/dee/ontologies/2025/11/untitled-ontology-29#Component"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/dee/ontologies/2025/11/untitled-ontology-29#WorkedExample -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/dee/ontologies/2025/11/untitled-ontology-29#WorkedExample"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/dee/ontologies/2025/11/untitled-ontology-29#Circle -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/dee/ontologies/2025/11/untitled-ontology-29#Circle"/>
+    
+
+
+    <!-- http://www.semanticweb.org/dee/ontologies/2025/11/untitled-ontology-29#CircleAreaFormula -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/dee/ontologies/2025/11/untitled-ontology-29#CircleAreaFormula">
+        <rdf:type rdf:resource="http://www.semanticweb.org/dee/ontologies/2025/11/untitled-ontology-29#AreaFormula"/>
+        <untitled-ontology-29:usesComponent rdf:resource="http://www.semanticweb.org/dee/ontologies/2025/11/untitled-ontology-29#CircleRadiusExample1"/>
+        <untitled-ontology-29:formulaText>pi * radius * radius</untitled-ontology-29:formulaText>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/dee/ontologies/2025/11/untitled-ontology-29#CircleExample1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/dee/ontologies/2025/11/untitled-ontology-29#CircleExample1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/dee/ontologies/2025/11/untitled-ontology-29#WorkedExample"/>
+        <untitled-ontology-29:hasComponent rdf:resource="http://www.semanticweb.org/dee/ontologies/2025/11/untitled-ontology-29#CircleRadiusExample1"/>
+        <untitled-ontology-29:stepText>Identify the radius of the circle.  
+Use the formula: Area = π * radius * radius.  
+Substitute the radius value (e.g., 7 units).  
+Calculate the area: Area = π * 7 * 7 = 153.94 units².</untitled-ontology-29:stepText>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/dee/ontologies/2025/11/untitled-ontology-29#CircleLesson -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/dee/ontologies/2025/11/untitled-ontology-29#CircleLesson">
+        <rdf:type rdf:resource="http://www.semanticweb.org/dee/ontologies/2025/11/untitled-ontology-29#Lesson"/>
+        <untitled-ontology-29:explainsFormula rdf:resource="http://www.semanticweb.org/dee/ontologies/2025/11/untitled-ontology-29#CircleAreaFormula"/>
+        <untitled-ontology-29:hasWorkedExample rdf:resource="http://www.semanticweb.org/dee/ontologies/2025/11/untitled-ontology-29#CircleExample1"/>
+        <untitled-ontology-29:teachesShape rdf:resource="http://www.semanticweb.org/dee/ontologies/2025/11/untitled-ontology-29#Circle"/>
+        <untitled-ontology-29:lessonText>A circle is a round shape where all points are the same distance from the centre.
+The area depends on the radius of the circle.</untitled-ontology-29:lessonText>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/dee/ontologies/2025/11/untitled-ontology-29#CircleRadiusExample1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/dee/ontologies/2025/11/untitled-ontology-29#CircleRadiusExample1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/dee/ontologies/2025/11/untitled-ontology-29#Radius"/>
+        <untitled-ontology-29:value rdf:datatype="http://www.w3.org/2001/XMLSchema#float">7.0</untitled-ontology-29:value>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/dee/ontologies/2025/11/untitled-ontology-29#Parallelogram -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/dee/ontologies/2025/11/untitled-ontology-29#Parallelogram"/>
+    
+
+
+    <!-- http://www.semanticweb.org/dee/ontologies/2025/11/untitled-ontology-29#ParallelogramAreaFormula -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/dee/ontologies/2025/11/untitled-ontology-29#ParallelogramAreaFormula">
+        <rdf:type rdf:resource="http://www.semanticweb.org/dee/ontologies/2025/11/untitled-ontology-29#AreaFormula"/>
+        <untitled-ontology-29:usesComponent rdf:resource="http://www.semanticweb.org/dee/ontologies/2025/11/untitled-ontology-29#ParallelogramBaseExample1"/>
+        <untitled-ontology-29:usesComponent rdf:resource="http://www.semanticweb.org/dee/ontologies/2025/11/untitled-ontology-29#ParallelogramHeightExample1"/>
+        <untitled-ontology-29:formulaText>base * height</untitled-ontology-29:formulaText>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/dee/ontologies/2025/11/untitled-ontology-29#ParallelogramBaseExample1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/dee/ontologies/2025/11/untitled-ontology-29#ParallelogramBaseExample1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/dee/ontologies/2025/11/untitled-ontology-29#Base"/>
+        <untitled-ontology-29:value rdf:datatype="http://www.w3.org/2001/XMLSchema#float">7.0</untitled-ontology-29:value>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/dee/ontologies/2025/11/untitled-ontology-29#ParallelogramExample1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/dee/ontologies/2025/11/untitled-ontology-29#ParallelogramExample1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/dee/ontologies/2025/11/untitled-ontology-29#WorkedExample"/>
+        <untitled-ontology-29:hasComponent rdf:resource="http://www.semanticweb.org/dee/ontologies/2025/11/untitled-ontology-29#ParallelogramBaseExample1"/>
+        <untitled-ontology-29:hasComponent rdf:resource="http://www.semanticweb.org/dee/ontologies/2025/11/untitled-ontology-29#ParallelogramHeightExample1"/>
+        <untitled-ontology-29:stepText>Identify the base and vertical height of the parallelogram.  
+Use the formula: Area = base * height.  
+Substitute the values (Base = 7 units, Height = 5 units).  
+Calculate the area: Area = 7 * 5 = 35 units²</untitled-ontology-29:stepText>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/dee/ontologies/2025/11/untitled-ontology-29#ParallelogramHeightExample1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/dee/ontologies/2025/11/untitled-ontology-29#ParallelogramHeightExample1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/dee/ontologies/2025/11/untitled-ontology-29#Height"/>
+        <untitled-ontology-29:value rdf:datatype="http://www.w3.org/2001/XMLSchema#float">5.0</untitled-ontology-29:value>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/dee/ontologies/2025/11/untitled-ontology-29#ParallelogramLesson -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/dee/ontologies/2025/11/untitled-ontology-29#ParallelogramLesson">
+        <rdf:type rdf:resource="http://www.semanticweb.org/dee/ontologies/2025/11/untitled-ontology-29#Lesson"/>
+        <untitled-ontology-29:explainsFormula rdf:resource="http://www.semanticweb.org/dee/ontologies/2025/11/untitled-ontology-29#ParallelogramAreaFormula"/>
+        <untitled-ontology-29:hasWorkedExample rdf:resource="http://www.semanticweb.org/dee/ontologies/2025/11/untitled-ontology-29#ParallelogramExample1"/>
+        <untitled-ontology-29:teachesShape rdf:resource="http://www.semanticweb.org/dee/ontologies/2025/11/untitled-ontology-29#Parallelogram"/>
+        <untitled-ontology-29:lessonText>A parallelogram has opposite sides parallel and equal.
+Its area depends on the base and the vertical height.</untitled-ontology-29:lessonText>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/dee/ontologies/2025/11/untitled-ontology-29#Rectangle -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/dee/ontologies/2025/11/untitled-ontology-29#Rectangle"/>
+    
+
+
+    <!-- http://www.semanticweb.org/dee/ontologies/2025/11/untitled-ontology-29#RectangleAreaFormula -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/dee/ontologies/2025/11/untitled-ontology-29#RectangleAreaFormula">
+        <rdf:type rdf:resource="http://www.semanticweb.org/dee/ontologies/2025/11/untitled-ontology-29#AreaFormula"/>
+        <untitled-ontology-29:usesComponent rdf:resource="http://www.semanticweb.org/dee/ontologies/2025/11/untitled-ontology-29#RectangleLengthExample1"/>
+        <untitled-ontology-29:usesComponent rdf:resource="http://www.semanticweb.org/dee/ontologies/2025/11/untitled-ontology-29#RectangleWidthExample1"/>
+        <untitled-ontology-29:formulaText>length * width</untitled-ontology-29:formulaText>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/dee/ontologies/2025/11/untitled-ontology-29#RectangleExample1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/dee/ontologies/2025/11/untitled-ontology-29#RectangleExample1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/dee/ontologies/2025/11/untitled-ontology-29#WorkedExample"/>
+        <untitled-ontology-29:hasComponent rdf:resource="http://www.semanticweb.org/dee/ontologies/2025/11/untitled-ontology-29#RectangleLengthExample1"/>
+        <untitled-ontology-29:hasComponent rdf:resource="http://www.semanticweb.org/dee/ontologies/2025/11/untitled-ontology-29#RectangleWidthExample1"/>
+        <untitled-ontology-29:stepText>Identify the length and width of the rectangle.  
+Use the formula: Area = length * width.  
+Substitute the values (Length = 8 units, Width = 4 units).  
+Calculate the area: Area = 8 * 4 = 32 units².</untitled-ontology-29:stepText>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/dee/ontologies/2025/11/untitled-ontology-29#RectangleLengthExample1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/dee/ontologies/2025/11/untitled-ontology-29#RectangleLengthExample1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/dee/ontologies/2025/11/untitled-ontology-29#Length"/>
+        <untitled-ontology-29:value rdf:datatype="http://www.w3.org/2001/XMLSchema#float">8.0</untitled-ontology-29:value>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/dee/ontologies/2025/11/untitled-ontology-29#RectangleLesson -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/dee/ontologies/2025/11/untitled-ontology-29#RectangleLesson">
+        <rdf:type rdf:resource="http://www.semanticweb.org/dee/ontologies/2025/11/untitled-ontology-29#Lesson"/>
+        <untitled-ontology-29:explainsFormula rdf:resource="http://www.semanticweb.org/dee/ontologies/2025/11/untitled-ontology-29#RectangleAreaFormula"/>
+        <untitled-ontology-29:hasWorkedExample rdf:resource="http://www.semanticweb.org/dee/ontologies/2025/11/untitled-ontology-29#RectangleExample1"/>
+        <untitled-ontology-29:teachesShape rdf:resource="http://www.semanticweb.org/dee/ontologies/2025/11/untitled-ontology-29#Rectangle"/>
+        <untitled-ontology-29:lessonText>A rectangle has opposite sides equal and four right angles.
+Its area is calculated by multiplying the length by the width.</untitled-ontology-29:lessonText>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/dee/ontologies/2025/11/untitled-ontology-29#RectangleWidthExample1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/dee/ontologies/2025/11/untitled-ontology-29#RectangleWidthExample1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/dee/ontologies/2025/11/untitled-ontology-29#Width"/>
+        <untitled-ontology-29:value rdf:datatype="http://www.w3.org/2001/XMLSchema#float">4.0</untitled-ontology-29:value>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/dee/ontologies/2025/11/untitled-ontology-29#Square -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/dee/ontologies/2025/11/untitled-ontology-29#Square"/>
+    
+
+
+    <!-- http://www.semanticweb.org/dee/ontologies/2025/11/untitled-ontology-29#SquareAreaFormula -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/dee/ontologies/2025/11/untitled-ontology-29#SquareAreaFormula">
+        <rdf:type rdf:resource="http://www.semanticweb.org/dee/ontologies/2025/11/untitled-ontology-29#AreaFormula"/>
+        <untitled-ontology-29:usesComponent rdf:resource="http://www.semanticweb.org/dee/ontologies/2025/11/untitled-ontology-29#SquareSideExample1"/>
+        <untitled-ontology-29:formulaText>side * side</untitled-ontology-29:formulaText>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/dee/ontologies/2025/11/untitled-ontology-29#SquareExample1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/dee/ontologies/2025/11/untitled-ontology-29#SquareExample1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/dee/ontologies/2025/11/untitled-ontology-29#WorkedExample"/>
+        <untitled-ontology-29:hasComponent rdf:resource="http://www.semanticweb.org/dee/ontologies/2025/11/untitled-ontology-29#SquareSideExample1"/>
+        <untitled-ontology-29:stepText>Identify the side length of the square.  
+Use the formula: Area = side * side.  
+Substitute the value (Side = 5 units).  
+Calculate the area: Area = 5 * 5 = 25 units².</untitled-ontology-29:stepText>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/dee/ontologies/2025/11/untitled-ontology-29#SquareLesson -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/dee/ontologies/2025/11/untitled-ontology-29#SquareLesson">
+        <rdf:type rdf:resource="http://www.semanticweb.org/dee/ontologies/2025/11/untitled-ontology-29#Lesson"/>
+        <untitled-ontology-29:explainsFormula rdf:resource="http://www.semanticweb.org/dee/ontologies/2025/11/untitled-ontology-29#SquareAreaFormula"/>
+        <untitled-ontology-29:hasWorkedExample rdf:resource="http://www.semanticweb.org/dee/ontologies/2025/11/untitled-ontology-29#SquareExample1"/>
+        <untitled-ontology-29:teachesShape rdf:resource="http://www.semanticweb.org/dee/ontologies/2025/11/untitled-ontology-29#Square"/>
+        <untitled-ontology-29:lessonText>A square has four equal sides and four right angles.
+The area of a square is found by multiplying the side length by itself.</untitled-ontology-29:lessonText>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/dee/ontologies/2025/11/untitled-ontology-29#SquareSideExample1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/dee/ontologies/2025/11/untitled-ontology-29#SquareSideExample1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/dee/ontologies/2025/11/untitled-ontology-29#Side"/>
+        <untitled-ontology-29:value rdf:datatype="http://www.w3.org/2001/XMLSchema#float">5.0</untitled-ontology-29:value>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/dee/ontologies/2025/11/untitled-ontology-29#Trapezium -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/dee/ontologies/2025/11/untitled-ontology-29#Trapezium"/>
+    
+
+
+    <!-- http://www.semanticweb.org/dee/ontologies/2025/11/untitled-ontology-29#TrapeziumAreaFormula -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/dee/ontologies/2025/11/untitled-ontology-29#TrapeziumAreaFormula">
+        <rdf:type rdf:resource="http://www.semanticweb.org/dee/ontologies/2025/11/untitled-ontology-29#AreaFormula"/>
+        <untitled-ontology-29:usesComponent rdf:resource="http://www.semanticweb.org/dee/ontologies/2025/11/untitled-ontology-29#TrapeziumBase1Example1"/>
+        <untitled-ontology-29:usesComponent rdf:resource="http://www.semanticweb.org/dee/ontologies/2025/11/untitled-ontology-29#TrapeziumBase2Example1"/>
+        <untitled-ontology-29:usesComponent rdf:resource="http://www.semanticweb.org/dee/ontologies/2025/11/untitled-ontology-29#TrapeziumHeightExample1"/>
+        <untitled-ontology-29:formulaText>0.5 * (base1 + base2) * height</untitled-ontology-29:formulaText>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/dee/ontologies/2025/11/untitled-ontology-29#TrapeziumBase1Example1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/dee/ontologies/2025/11/untitled-ontology-29#TrapeziumBase1Example1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/dee/ontologies/2025/11/untitled-ontology-29#Base"/>
+        <untitled-ontology-29:value rdf:datatype="http://www.w3.org/2001/XMLSchema#float">6.0</untitled-ontology-29:value>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/dee/ontologies/2025/11/untitled-ontology-29#TrapeziumBase2Example1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/dee/ontologies/2025/11/untitled-ontology-29#TrapeziumBase2Example1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/dee/ontologies/2025/11/untitled-ontology-29#Base"/>
+        <untitled-ontology-29:value rdf:datatype="http://www.w3.org/2001/XMLSchema#float">10.0</untitled-ontology-29:value>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/dee/ontologies/2025/11/untitled-ontology-29#TrapeziumExample1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/dee/ontologies/2025/11/untitled-ontology-29#TrapeziumExample1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/dee/ontologies/2025/11/untitled-ontology-29#WorkedExample"/>
+        <untitled-ontology-29:hasComponent rdf:resource="http://www.semanticweb.org/dee/ontologies/2025/11/untitled-ontology-29#TrapeziumBase1Example1"/>
+        <untitled-ontology-29:hasComponent rdf:resource="http://www.semanticweb.org/dee/ontologies/2025/11/untitled-ontology-29#TrapeziumBase2Example1"/>
+        <untitled-ontology-29:hasComponent rdf:resource="http://www.semanticweb.org/dee/ontologies/2025/11/untitled-ontology-29#TrapeziumHeightExample1"/>
+        <untitled-ontology-29:stepText>Identify the two parallel sides (base1 and base2) and the height.  
+Use the formula: Area = 0.5 * (base1 + base2) * height.  
+Substitute the values (Base1 = 6 units, Base2 = 10 units, Height = 4 units).  
+Calculate the area: Area = 0.5 * (6 + 10) * 4 = 32 units².</untitled-ontology-29:stepText>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/dee/ontologies/2025/11/untitled-ontology-29#TrapeziumHeightExample1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/dee/ontologies/2025/11/untitled-ontology-29#TrapeziumHeightExample1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/dee/ontologies/2025/11/untitled-ontology-29#Height"/>
+        <untitled-ontology-29:value rdf:datatype="http://www.w3.org/2001/XMLSchema#float">4.0</untitled-ontology-29:value>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/dee/ontologies/2025/11/untitled-ontology-29#TrapeziumLesson -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/dee/ontologies/2025/11/untitled-ontology-29#TrapeziumLesson">
+        <rdf:type rdf:resource="http://www.semanticweb.org/dee/ontologies/2025/11/untitled-ontology-29#Lesson"/>
+        <untitled-ontology-29:explainsFormula rdf:resource="http://www.semanticweb.org/dee/ontologies/2025/11/untitled-ontology-29#TrapeziumAreaFormula"/>
+        <untitled-ontology-29:hasWorkedExample rdf:resource="http://www.semanticweb.org/dee/ontologies/2025/11/untitled-ontology-29#TrapeziumExample1"/>
+        <untitled-ontology-29:teachesShape rdf:resource="http://www.semanticweb.org/dee/ontologies/2025/11/untitled-ontology-29#Trapezium"/>
+        <untitled-ontology-29:lessonText>A trapezium has one pair of parallel sides.
+The area is half the sum of the parallel sides multiplied by the height.</untitled-ontology-29:lessonText>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/dee/ontologies/2025/11/untitled-ontology-29#Triangle -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/dee/ontologies/2025/11/untitled-ontology-29#Triangle"/>
+    
+
+
+    <!-- http://www.semanticweb.org/dee/ontologies/2025/11/untitled-ontology-29#TriangleAreaFormula -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/dee/ontologies/2025/11/untitled-ontology-29#TriangleAreaFormula">
+        <rdf:type rdf:resource="http://www.semanticweb.org/dee/ontologies/2025/11/untitled-ontology-29#AreaFormula"/>
+        <untitled-ontology-29:usesComponent rdf:resource="http://www.semanticweb.org/dee/ontologies/2025/11/untitled-ontology-29#TriangleBaseExample1"/>
+        <untitled-ontology-29:usesComponent rdf:resource="http://www.semanticweb.org/dee/ontologies/2025/11/untitled-ontology-29#TriangleHeightExample1"/>
+        <untitled-ontology-29:formulaText>0.5 * base * height</untitled-ontology-29:formulaText>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/dee/ontologies/2025/11/untitled-ontology-29#TriangleBaseExample1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/dee/ontologies/2025/11/untitled-ontology-29#TriangleBaseExample1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/dee/ontologies/2025/11/untitled-ontology-29#Base"/>
+        <untitled-ontology-29:value rdf:datatype="http://www.w3.org/2001/XMLSchema#float">10.0</untitled-ontology-29:value>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/dee/ontologies/2025/11/untitled-ontology-29#TriangleExample1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/dee/ontologies/2025/11/untitled-ontology-29#TriangleExample1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/dee/ontologies/2025/11/untitled-ontology-29#WorkedExample"/>
+        <untitled-ontology-29:hasComponent rdf:resource="http://www.semanticweb.org/dee/ontologies/2025/11/untitled-ontology-29#TriangleBaseExample1"/>
+        <untitled-ontology-29:hasComponent rdf:resource="http://www.semanticweb.org/dee/ontologies/2025/11/untitled-ontology-29#TriangleHeightExample1"/>
+        <untitled-ontology-29:hasFormula rdf:resource="http://www.semanticweb.org/dee/ontologies/2025/11/untitled-ontology-29#TriangleAreaFormula"/>
+        <untitled-ontology-29:stepText>Identify the base and height of the triangle.  
+Use the formula: Area = 0.5 * base * height.  
+Substitute the values (Base = 10 units, Height = 5 units).
+Calculate the area: Area = 0.5 * 10 * 5 = 25 units².</untitled-ontology-29:stepText>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/dee/ontologies/2025/11/untitled-ontology-29#TriangleHeightExample1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/dee/ontologies/2025/11/untitled-ontology-29#TriangleHeightExample1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/dee/ontologies/2025/11/untitled-ontology-29#Height"/>
+        <untitled-ontology-29:value rdf:datatype="http://www.w3.org/2001/XMLSchema#float">6.0</untitled-ontology-29:value>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/dee/ontologies/2025/11/untitled-ontology-29#TriangleLesson -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/dee/ontologies/2025/11/untitled-ontology-29#TriangleLesson">
+        <rdf:type rdf:resource="http://www.semanticweb.org/dee/ontologies/2025/11/untitled-ontology-29#Lesson"/>
+        <untitled-ontology-29:explainsFormula rdf:resource="http://www.semanticweb.org/dee/ontologies/2025/11/untitled-ontology-29#TriangleAreaFormula"/>
+        <untitled-ontology-29:hasWorkedExample rdf:resource="http://www.semanticweb.org/dee/ontologies/2025/11/untitled-ontology-29#TriangleExample1"/>
+        <untitled-ontology-29:teachesShape rdf:resource="http://www.semanticweb.org/dee/ontologies/2025/11/untitled-ontology-29#Triangle"/>
+        <untitled-ontology-29:lessonText>A triangle has three sides.
+The area is half the product of its base and perpendicular height.</untitled-ontology-29:lessonText>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/dee/ontologies/2025/11/untitled-ontology-29#Base"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/dee/ontologies/2025/11/untitled-ontology-29#Height"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/dee/ontologies/2025/11/untitled-ontology-29#Radius"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/dee/ontologies/2025/11/untitled-ontology-29#Side"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/dee/ontologies/2025/11/untitled-ontology-29#Circle"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/dee/ontologies/2025/11/untitled-ontology-29#Parallelogram"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/dee/ontologies/2025/11/untitled-ontology-29#Rectangle"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/dee/ontologies/2025/11/untitled-ontology-29#Square"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/dee/ontologies/2025/11/untitled-ontology-29#Trapezium"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/dee/ontologies/2025/11/untitled-ontology-29#Triangle"/>
+        </owl:members>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi -->
+
